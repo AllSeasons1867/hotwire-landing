@@ -1,0 +1,12 @@
+<h1>Editing Greeting</h1>
+
+<%= turbo_frame_tag dom_id(@greeting) do %>
+
+    <%= render 'form', greeting: @greeting %>
+
+    <div style="margin: 5px">
+        <%= link_to 'Cancel', @greeting %>
+    </div>
+<% end %>
+
+

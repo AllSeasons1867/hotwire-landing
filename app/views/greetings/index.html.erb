@@ -1,0 +1,34 @@
+<%= turbo_stream_from 'greetings' %>
+
+<p id="notice"><%= notice %></p>
+
+<div class="home-video-wrapper">
+  <%= video_tag "arnold.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "home_video" %>
+  <h1 class="home" id="home-text" style="color: white;">This is Bitlicious<br><%= link_to 'Enter Here', welcomes_path %></h1>
+</div>
+  
+  <hr>
+  
+  <div class="container comment-container">
+  
+  <h1 class="header">Welcome to Bitlicious</h1>
+  <h3>Drop me a line!</h3>
+
+
+  <%= render 'form', greeting: @greeting %>
+
+
+<br>
+
+<%= turbo_frame_tag "greetings" do %>
+  <%= render @greetings %>
+<% end %>
+
+</div>
+
+</div>
+
+
+
+
+

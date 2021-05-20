@@ -1,0 +1,14 @@
+<%= turbo_frame_tag dom_id(greeting) do %>
+    <div class="card"> 
+        <div class='col greeting'>
+            <h6><%= time_ago_in_words(greeting.created_at)%> ago Anonymous said:</h6>
+            <p><%= greeting.body %></p>
+        </div>
+    </div>
+    <span style="margin: 5px 5px 5px 0px; display:inline-block;">
+         <%= button_to "Delete", greeting, :class => 'btn btn-light' , method: :delete %>
+    </span>
+    <span style="margin: 5px 5px 5px 0px; display:inline-block;">
+        <%= button_to "Edit", edit_greeting_path(greeting), :class => 'btn btn-light',  method: 'get' %>
+    </span>
+<% end %>

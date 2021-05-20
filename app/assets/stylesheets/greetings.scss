@@ -1,0 +1,48 @@
+// Place all the styles related to the Greetings controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.home_video {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    z-index: -2;
+   }
+
+   .home-video-wrapper {
+   height: 100vh;
+   display: flex;
+   }
+
+   h1.home {
+     color: white;
+   }
+
+   #home-text {
+    height: auto;
+    margin: auto;
+    // text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    // font-weight: bolder;
+   }
+
+   .input {
+       padding-bottom: 5%;
+   }
+
+   video {
+    filter: brightness(80%);
+ }
+
+ .greeting {
+   padding: 10px;
+ }
+
+ .comment-container {
+   padding-bottom: 5%;
+   padding-left: 10%;
+   padding-right: 10%;
+ }
+
+ 
