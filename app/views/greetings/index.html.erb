@@ -14,9 +14,9 @@
   <h1 class="header">Welcome to Bitlicious</h1>
   <h3>Drop me a line!</h3>
 
-
+<%= turbo_frame_tag "greeting_form" do %>
   <%= render 'form', greeting: @greeting %>
-
+<% end %>
 
 <br>
 
